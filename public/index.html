@@ -92,7 +92,7 @@
                     lscount++;
                     const cpayload = {'entry number': lscount, 'task': textToDoWithLineBreaks};
                     
-                    fetch('http://localhost:3000/task/create',{
+                    fetch('https://activity11.onrender.com/task/create',{
                         method: 'POST',
                         headers: {
                             'Accept': 'application/json',
@@ -151,7 +151,7 @@
                         const dtext = (this.innerText).slice(-1);
                         console.log(dtext);
 
-                        fetch(`http://localhost:3000/task/${dtext}`,{
+                        fetch(`https://activity11.onrender.com/task/${dtext}`,{
                             method: 'DELETE',
                         })
                     }
@@ -189,7 +189,7 @@
 
                         const spayload = {'entry number': stext, 'task': editedTextWLB};
 
-                        fetch(`http://localhost:3000/task/${stext}`,{
+                        fetch(`https://activity11.onrender.com/task/${stext}`,{
                             method: 'PUT',
                             headers: {
                                 'Accept': 'application/json',
